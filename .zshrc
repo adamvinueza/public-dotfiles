@@ -1,6 +1,18 @@
 # My zsh profile. System-wide configuration is in /etc/zshrc.
 
+# BIG history
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
+
+# I WANT TO SEE MY HISTORY IN REAL TIME
+setopt INC_APPEND_HISTORY
+
 # Aliases
+#
+# history should always be extended
+alias history='history -E'
+
+# grep shortcuts
 alias grep='grep --color'                     # show differences in colour
 alias egrep='egrep --color=auto'              # show differences in colour
 alias fgrep='fgrep --color=auto'              # show differences in colour

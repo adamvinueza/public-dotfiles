@@ -64,6 +64,12 @@ set confirm
 " Leave two lines at the bottom for commands, not just one
 set cmdheight=2
 
+" switch splitting from vertical to horizontal to -
+noremap <c-w>- <c-w>t<c-w>K
+
+" switch splitting from horizontal to vertical to |
+noremap <c-w>\| <c-w>t<c-w>H
+
 " }}}
 
 " Custom Leader {{{
@@ -114,6 +120,12 @@ map Y y$
 " Truncate to 80 characters as you type
 set tw=80
 
+" Fold and unfold using triple brackets
+set foldmethod=marker
+set foldmarker={{{,}}}
+
+" Open files with folds open
+set foldlevel=1
 " }}}
 
 " NERDTree {{{

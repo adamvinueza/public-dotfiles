@@ -128,6 +128,12 @@ set foldmarker={{{,}}}
 set foldlevel=1
 " }}}
 
+" Python Editing {{{
+
+" Trailing whitespace (for flake8):
+autocmd BufWritePre *.py :%s/\s\+$//e
+" }}}
+
 " NERDTree {{{
 " Key binding
 nmap <C-f> :NERDTreeToggle<CR>

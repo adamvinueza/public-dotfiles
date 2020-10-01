@@ -29,6 +29,11 @@ alias lla='ls -la'
 # rm shortcuts
 alias rf='rm -f'                              # force delete
 alias rr='rm -rf'                             # force recursive delete
+#
+# git
+# h/t @rakyll
+alias undo='git reset HEAD~'
+
 
 # pyenv configuration 
 export PATH=~/.pyenv/bin:$PATH

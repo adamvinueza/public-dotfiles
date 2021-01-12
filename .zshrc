@@ -7,6 +7,10 @@ export HISTSIZE=1000000000
 # I WANT TO SEE MY HISTORY IN REAL TIME
 setopt INC_APPEND_HISTORY
 
+# Turn off the stupid Ctrl-S/Ctrl-Q thing that's a relic from line printers
+#
+stty -ixon
+
 # Aliases
 #
 # history should always be extended
